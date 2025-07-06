@@ -1,16 +1,16 @@
-# 💳 Smart Credit Card Fraud Detection
+#  Smart Credit Card Fraud Detection
 
 A machine learning-powered tool to intelligently detect suspicious credit card transactions in real time — designed for analysts, security teams, and anyone dealing with high-volume transaction data.
 
 ---
 
-## 🧠 What It Does
+##  What It Does
 
 This application helps you identify fraudulent transactions **as they happen**, even when dealing with highly imbalanced data (where fraud is rare but costly). Using a trained logistic regression model behind a simple UI, users can upload transaction files, get immediate predictions, and visually assess model performance — all from their browser.
 
 ---
 
-## 🔎 How It Works
+##  How It Works
 
 Instead of a bulky dashboard or enterprise software, this is a **Streamlit-based interface** backed by a **Python-powered ML engine**. It scans uploaded CSV files, preprocesses the data (like scaling features), and instantly classifies transactions as either **legitimate** or **fraudulent**.
 
@@ -18,38 +18,38 @@ Admins get extra control — they can upload newer models, manage users, and eve
 
 ---
 
-## 🧩 Application Modules
+##  Application Modules
 
 Here’s a breakdown of what’s included:
 
-### 🔐 Authentication
+###  Authentication
 - Users can securely log in
 - Admins have extended privileges (model & user management)
 
-### 📁 Upload Interface
+###  Upload Interface
 - Simple CSV uploader for credit card transaction data
 
-### 🧮 Prediction Engine
+###  Prediction Engine
 - Powered by a pre-trained **Logistic Regression model**
 - Real-time prediction of each transaction
 - Confidence score and probability-based feedback
 
-### 📊 Metrics + Evaluation
+###  Metrics + Evaluation
 - Evaluation scores: **Accuracy**, **Precision**, **Recall**, **F1-score**
 - Confusion Matrix visualization
 - Summary of fraud stats (e.g., how many flagged out of total)
 
-### 🛠 Admin Controls
+###  Admin Controls
 - Upload/manage ML models and scalers
 - Track model versions
 
-### 🎨 Customization
+###  Customization
 - Light/dark mode toggle
 - Control notification behavior
 
 ---
 
-## 📸 Visual Walkthrough
+##  Visual Walkthrough
 
 > A quick peek into the system in action:
 
@@ -77,7 +77,7 @@ Model performance at a glance
 
 ---
 
-## 🏗 Under the Hood
+##  Under the Hood
 
 The system follows a clean **client-server architecture**:
 
@@ -90,7 +90,7 @@ The system follows a clean **client-server architecture**:
 
 ---
 
-## 🧰 Tech Behind It
+##  Tech Behind It
 
 | Part                 | Tools Used                                    |
 |----------------------|-----------------------------------------------|
