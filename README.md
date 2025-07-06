@@ -30,9 +30,17 @@ Built as a **web-based application** with a Streamlit frontend and a Python back
 - ⚖️ **Imbalanced Data Handling**: Undersampling techniques via `imblearn` to tackle class imbalance.
 
 ---
+## 📸 Screenshots
+# 🔐 Login Page
+Secure login page for user and admin authentication.
 ![image alt](https://github.com/rohanpahari3/Credit-Card-Fraud-Detection/blob/ef1bb7276e804183c87e9ca668568de109f31de2/Screenshot%202025-07-06%20194110.png)
+# ⚠️ Legitimate Detection Results
+Visual feedback highlighting fraudulent transactions.
 ![image alt](https://github.com/rohanpahari3/Credit-Card-Fraud-Detection/blob/a29997a3592e5d1d5766eedc745b8bc2be1fe01c/Screenshot%202025-07-06%20194215.png)
+# ⚠️ Fraud Detection Results
+Visual feedback highlighting fraudulent transactions.
 ![image alt](https://github.com/rohanpahari3/Credit-Card-Fraud-Detection/blob/a29997a3592e5d1d5766eedc745b8bc2be1fe01c/Screenshot%202025-07-06%20194245.png)
+# 🧮 Confusion Matrix
 ![image alt](https://github.com/rohanpahari3/Credit-Card-Fraud-Detection/blob/a29997a3592e5d1d5766eedc745b8bc2be1fe01c/Screenshot%202025-07-06%20194309.png)
 ## 🏗 System Architecture
 
