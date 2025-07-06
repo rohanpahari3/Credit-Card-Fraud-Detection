@@ -30,7 +30,7 @@ Built as a **web-based application** with a Streamlit frontend and a Python back
 - ⚖️ **Imbalanced Data Handling**: Undersampling techniques via `imblearn` to tackle class imbalance.
 
 ---
-
+![image alt](https://github.com/rohanpahari3/Credit-Card-Fraud-Detection/blob/ef1bb7276e804183c87e9ca668568de109f31de2/Screenshot%202025-07-06%20194110.png)
 ## 🏗 System Architecture
 
 The application follows a lightweight **client-server architecture**, blending a minimal UI with powerful backend logic.
@@ -65,5 +65,5 @@ To launch the application locally:
 ```bash
 streamlit run app.py
 
-![image alt](https://github.com/rohanpahari3/Credit-Card-Fraud-Detection/blob/ef1bb7276e804183c87e9ca668568de109f31de2/Screenshot%202025-07-06%20194110.png)
+
 
