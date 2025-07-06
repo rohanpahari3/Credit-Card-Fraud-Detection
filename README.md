@@ -72,6 +72,5 @@ The application follows a lightweight **client-server architecture**, blending a
 ## ▶️ Getting Started
 
 To launch the application locally:
-
-bash
+```bash
 streamlit run app.py
