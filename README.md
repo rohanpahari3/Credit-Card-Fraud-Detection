@@ -1,111 +1,77 @@
-#  Smart Credit Card Fraud Detection
+# 💳 Credit Card Fraud Detection System
 
-A machine learning-powered tool to intelligently detect suspicious credit card transactions in real time — designed for analysts, security teams, and anyone dealing with high-volume transaction data.
+## 🚀 Project Overview
 
----
+This project implements a **robust Credit Card Fraud Detection System** designed to identify and flag fraudulent transactions using machine learning.
 
-##  What It Does
-
-This application helps you identify fraudulent transactions **as they happen**, even when dealing with highly imbalanced data (where fraud is rare but costly). Using a trained logistic regression model behind a simple UI, users can upload transaction files, get immediate predictions, and visually assess model performance — all from their browser.
+Built as a **web-based application** with a Streamlit frontend and a Python backend, it empowers financial analysts and security teams with real-time insights into suspicious activities. The system learns from transaction patterns and distinguishes between legitimate and fraudulent behavior—even with imbalanced data.
 
 ---
 
-##  How It Works
+## 🎯 Key Features
 
-Instead of a bulky dashboard or enterprise software, this is a **Streamlit-based interface** backed by a **Python-powered ML engine**. It scans uploaded CSV files, preprocesses the data (like scaling features), and instantly classifies transactions as either **legitimate** or **fraudulent**.
+- 🔐 **User Authentication**: Secure login for users and admin authentication for managing models and users.
+- 📂 **Dataset Upload**: Upload CSV files containing credit card transaction data for analysis.
+- ⚠️ **Fraud Prediction**: Classifies transactions as fraudulent or legitimate using a pre-trained Logistic Regression model.
+- 📊 **Prediction Output & Evaluation**: Displays predictions with:
+  - Accuracy
+  - Precision
+  - Recall
+  - F1-Score
+  - Confusion Matrix (visualized)
+- ⏱ **Real-Time Feedback**: Immediate display of results, including:
+  - Suspicious transactions
+  - Total transactions
+  - Fraud count
+  - Model confidence
+- 🔧 **Model Management** *(Admin-only)*: Upload and manage ML models and scalers with version tracking.
+- 🛠 **Settings & Customization**: Toggle light/dark mode and notification preferences.
+- 📉 **Data Preprocessing**: Feature scaling and preparation for model training.
+- ⚖️ **Imbalanced Data Handling**: Undersampling techniques via imblearn to tackle class imbalance.
 
-Admins get extra control — they can upload newer models, manage users, and even configure detection settings.
+---
+## 📸 Screenshots
+### 🔐 Login Page
+Secure login page for user and admin authentication.
+![image alt](https://github.com/rohanpahari3/Credit-Card-Fraud-Detection/blob/ef1bb7276e804183c87e9ca668568de109f31de2/Screenshot%202025-07-06%20194110.png)
+### ⚠️ Legitimate Detection Results
+Visual feedback highlighting legitimate transactions.
+![image alt](https://github.com/rohanpahari3/Credit-Card-Fraud-Detection/blob/a29997a3592e5d1d5766eedc745b8bc2be1fe01c/Screenshot%202025-07-06%20194215.png)
+### ⚠️ Fraud Detection Results
+Visual feedback highlighting fraudulent transactions.
+![image alt](https://github.com/rohanpahari3/Credit-Card-Fraud-Detection/blob/a29997a3592e5d1d5766eedc745b8bc2be1fe01c/Screenshot%202025-07-06%20194245.png)
+### 🧮 Confusion Matrix
+![image alt](https://github.com/rohanpahari3/Credit-Card-Fraud-Detection/blob/a29997a3592e5d1d5766eedc745b8bc2be1fe01c/Screenshot%202025-07-06%20194309.png)
+## 🏗 System Architecture
+
+The application follows a lightweight **client-server architecture**, blending a minimal UI with powerful backend logic.
+
+- **Frontend**: Built using **Streamlit**, offering an interactive, clean, and responsive UI.
+- **Backend**: Powered by **Python**, it:
+  - Handles uploaded data
+  - Loads and runs the Logistic Regression model
+  - Displays prediction results
+- **Machine Learning Module**: Trained with **scikit-learn** on labeled data to predict fraud probability.
 
 ---
 
-##  Application Modules
+## 🧰 Tech Stack
 
-Here’s a breakdown of what’s included:
-
-###  Authentication
-- Users can securely log in
-- Admins have extended privileges (model & user management)
-
-###  Upload Interface
-- Simple CSV uploader for credit card transaction data
-
-###  Prediction Engine
-- Powered by a pre-trained **Logistic Regression model**
-- Real-time prediction of each transaction
-- Confidence score and probability-based feedback
-
-###  Metrics + Evaluation
-- Evaluation scores: **Accuracy**, **Precision**, **Recall**, **F1-score**
-- Confusion Matrix visualization
-- Summary of fraud stats (e.g., how many flagged out of total)
-
-###  Admin Controls
-- Upload/manage ML models and scalers
-- Track model versions
-
-###  Customization
-- Light/dark mode toggle
-- Control notification behavior
+| Category              | Technologies Used                               |
+|-----------------------|--------------------------------------------------|
+| Programming Language  | Python                                           |
+| Web Framework         | Streamlit                                       |
+| Data Manipulation     | pandas, numpy                                   |
+| Machine Learning      | scikit-learn, imbalanced-learn (imblearn)     |
+| Visualization         | matplotlib, seaborn                             |
+| Version Control       | Git, GitHub                                     |
+| Env Management        | pip                                             |
 
 ---
 
-##  Visual Walkthrough
+## ▶️ Getting Started
 
-> A quick peek into the system in action:
+To launch the application locally:
 
-### 1. Login Page  
-Secure authentication for users and admins  
-![Login](https://github.com/rohanpahari3/Credit-Card-Fraud-Detection/blob/ef1bb7276e804183c87e9ca668568de109f31de2/Screenshot%202025-07-06%20194110.png)
-
----
-
-### 2. Legitimate Transactions Output  
-Visual indicator showing clean, non-fraud transactions  
-![Legit](https://github.com/rohanpahari3/Credit-Card-Fraud-Detection/blob/a29997a3592e5d1d5766eedc745b8bc2be1fe01c/Screenshot%202025-07-06%20194215.png)
-
----
-
-### 3. Fraudulent Transactions Output  
-Clearly highlights red-flagged activity  
-![Fraud](https://github.com/rohanpahari3/Credit-Card-Fraud-Detection/blob/a29997a3592e5d1d5766eedc745b8bc2be1fe01c/Screenshot%202025-07-06%20194245.png)
-
----
-
-### 4. Confusion Matrix  
-Model performance at a glance  
-![Matrix](https://github.com/rohanpahari3/Credit-Card-Fraud-Detection/blob/a29997a3592e5d1d5766eedc745b8bc2be1fe01c/Screenshot%202025-07-06%20194309.png)
-
----
-
-##  Under the Hood
-
-The system follows a clean **client-server architecture**:
-
-- **Frontend**: Built with Streamlit for fast prototyping and sleek UI
-- **Backend**: Python handles all logic, including:
-  - Model loading
-  - Data preprocessing
-  - Prediction & metrics
-- **ML Engine**: Trained with `scikit-learn`, tuned to handle imbalanced classes using `imblearn`
-
----
-
-##  Tech Behind It
-
-| Part                 | Tools Used                                    |
-|----------------------|-----------------------------------------------|
-| Programming          | Python                                        |
-| ML & Preprocessing   | scikit-learn, imbalanced-learn, pandas, numpy |
-| UI                   | Streamlit                                     |
-| Visualization        | matplotlib, seaborn                          |
-| Version Control      | Git + GitHub                                  |
-| Package Management   | pip                                           |
-
----
-
-## 🚦 How to Launch
-
-Get started in one command:
-
-```bash
+bash
 streamlit run app.py
